@@ -47,7 +47,7 @@ export const schoolInfo = {
     },
     {
       // for multiple examples of interest only, add items to interestOnly array
-      programName: "the UX/UI Design Course",
+      programName: "the UI/UX Design Course",
       APR36: "11.16%",
       financeCharge36: "$686.95",
       IOPayment36: "$23.34",
@@ -117,7 +117,7 @@ export const faq = {
       colAmount: "$6,000",
     },
     {
-      programName: "the UX/UI Design Course",
+      programName: "the UI/UX Design Course",
       maxAmount: "$2,995",
       col: false,
       colAmount: "$6,000",
@@ -151,7 +151,7 @@ export const threeStepCardText = {
   step2: {
     header: "select your program",
     text:
-      "Choose between the Full-Immersion Bootcamp, Individual Modules, and UX/UI Design Course.",
+      "Choose between the Full-Immersion Bootcamp, Individual Modules, and UI/UX Design Course.",
   },
   step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`,
 }
@@ -329,7 +329,7 @@ export const programLoanInfo = [
     ],
   },
   {
-    name: "UX/UI Design Course",
+    name: "UI/UX Design Course",
     url: "https://my.skills.fund/application?lenderCode=SKFUZEUDPT20",
     loanInfo: {
       // match loanInfo in first metro below
@@ -369,7 +369,7 @@ export const programLoanInfo = [
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
 export const programMaxText =
-  "Choose the loan amount that works best for you. Borrow up to $18,495 for LearningFuze's Full-Immersion Bootcamp, up to $3,995 for tuition for each of LearningFuze's modules 1-3, or up to $2,995 for the UX/UI Design Course."
+  "Choose the loan amount that works best for you. Borrow up to $18,495 for LearningFuze's Full-Immersion Bootcamp, up to $3,995 for tuition for each of LearningFuze's modules 1-3, or up to $2,995 for the UI/UX Design Course."
 
 export const paymentTable = {
   headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
