@@ -10,8 +10,8 @@ export const schoolInfo = {
   // term details section
   interestRate36: "8.99%",
   interestRate60: "10.99%",
-  APRRange36: "11.16 - 11.34%",
-  APRRange60: "12.51 - 12.58%",
+  APRRange36: "11.16%",
+  APRRange60: "12.51%",
   interestOnly: [
     {
       // for multiple examples of interest only, add items to interestOnly array
@@ -32,18 +32,34 @@ export const schoolInfo = {
     {
       // for multiple examples of interest only, add items to interestOnly array
       programName: "the Individual Modules",
-      APR36: "11.34%",
-      financeCharge36: "$854.06",
+      APR36: "11.16%",
+      financeCharge36: "$916.31",
       IOPayment36: "$31.13",
       FullMonthlyPayment36: "$132.10",
-      APR60: "12.58%",
-      financeCharge60: "$1,538.04",
+      APR60: "12.51%",
+      financeCharge60: "$1,614.14",
       IOPayment60: "$38.05",
       FullMonthlyPayment60: "$90.31",
       LoanExampleAmt: "$3,995",
       LoanExampleOFeeAmt: "$159.80",
       LoanExampleAmtPlusOFee: "$4,154.80",
-      programLength: "2", // program length in months
+      programLength: "3", // program length in months
+    },
+    {
+      // for multiple examples of interest only, add items to interestOnly array
+      programName: "the UX/UI Design Course",
+      APR36: "11.16%",
+      financeCharge36: "$686.95",
+      IOPayment36: "$23.34",
+      FullMonthlyPayment36: "$99.04",
+      APR60: "12.51%",
+      financeCharge60: "$1,210.10",
+      IOPayment60: "$28.53",
+      FullMonthlyPayment60: "$67.71",
+      LoanExampleAmt: "$3,995",
+      LoanExampleOFeeAmt: "$159.80",
+      LoanExampleAmtPlusOFee: "$4,154.80",
+      programLength: "3", // program length in months
     },
   ],
   immediateRepayment: [
@@ -100,6 +116,12 @@ export const faq = {
       col: false,
       colAmount: "$6,000",
     },
+    {
+      programName: "the UX/UI Design Course",
+      maxAmount: "$2,995",
+      col: false,
+      colAmount: "$6,000",
+    },
   ],
 }
 
@@ -128,7 +150,8 @@ export const threeStepCardText = {
   step1: "",
   step2: {
     header: "select your program",
-    text: "Choose between the Full-Immersion Bootcamp and Individual Modules.",
+    text:
+      "Choose between the Full-Immersion Bootcamp, Individual Modules, and UX/UI Design Course.",
   },
   step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`,
 }
@@ -204,8 +227,8 @@ export const programLoanInfo = [
       loanTerm60: true,
       "0": {
         k: 5,
-        apr36: 11.34,
-        apr60: 12.58,
+        apr36: 11.16,
+        apr60: 12.51,
       },
       "1": null,
     },
@@ -223,8 +246,8 @@ export const programLoanInfo = [
           loanTerm60: true,
           "0": {
             k: 5,
-            apr36: 11.34,
-            apr60: 12.58,
+            apr36: 11.16,
+            apr60: 12.51,
           },
           "1": null,
         },
@@ -241,8 +264,8 @@ export const programLoanInfo = [
       loanTerm60: true,
       "0": {
         k: 5,
-        apr36: 11.34,
-        apr60: 12.58,
+        apr36: 11.16,
+        apr60: 12.51,
       },
       "1": null,
     },
@@ -260,8 +283,8 @@ export const programLoanInfo = [
           loanTerm60: true,
           "0": {
             k: 5,
-            apr36: 11.34,
-            apr60: 12.58,
+            apr36: 11.16,
+            apr60: 12.51,
           },
           "1": null,
         },
@@ -278,8 +301,8 @@ export const programLoanInfo = [
       loanTerm60: true,
       "0": {
         k: 5,
-        apr36: 11.34,
-        apr60: 12.58,
+        apr36: 11.16,
+        apr60: 12.51,
       },
       "1": null,
     },
@@ -297,8 +320,45 @@ export const programLoanInfo = [
           loanTerm60: true,
           "0": {
             k: 5,
-            apr36: 11.34,
-            apr60: 12.58,
+            apr36: 11.16,
+            apr60: 12.51,
+          },
+          "1": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "UX/UI Design Course",
+    url: "https://my.skills.fund/application?lenderCode=SKFUZEUDPT20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 2995,
+      loanTerm36: true,
+      loanTerm60: true,
+      "0": {
+        k: 5,
+        apr36: 11.16,
+        apr60: 12.51,
+      },
+      "1": null,
+    },
+    defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false,
+    showLoanTypes: false,
+    locations: ["Metro 1", "Metro 2"],
+    metros: [
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // match loanInfo to Program 2 loanInfo above
+          maxLoanAmt: 2995,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 5,
+            apr36: 11.16,
+            apr60: 12.51,
           },
           "1": null,
         },
@@ -309,7 +369,7 @@ export const programLoanInfo = [
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
 export const programMaxText =
-  "Choose the loan amount that works best for you. Borrow up to $18,495 for LearningFuze's Full-Immersion Bootcamp or up to $3,995 for tuition for each of LearningFuze's modules."
+  "Choose the loan amount that works best for you. Borrow up to $18,495 for LearningFuze's Full-Immersion Bootcamp, up to $3,995 for tuition for each of LearningFuze's modules 1-3, or up to $2,995 for the UX/UI Design Course."
 
 export const paymentTable = {
   headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
