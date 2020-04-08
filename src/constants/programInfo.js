@@ -10,8 +10,8 @@ export const schoolInfo = {
   // term details section
   interestRate36: "8.99%",
   interestRate60: "10.99%",
-  APRRange36: "11.16%",
-  APRRange60: "12.51%",
+  APRRange36: "10.62 - 11.16%",
+  APRRange60: "12.26 - 12.51%",
   interestOnly: [
     {
       // for multiple examples of interest only, add items to interestOnly array
@@ -97,8 +97,8 @@ export const faq = {
   exampleLoanAmount: "$10,000",
   interestRate36: "8.99%",
   interestRate60: "10.99%",
-  APR36: "11.16 - 11.34%",
-  APR60: "12.51 - 12.55%",
+  APR36: "10.62 - 11.34%",
+  APR60: "12.26 - 12.55%",
   IOPayment36: "$77.91",
   IOPayment60: "$95.25",
 
@@ -119,6 +119,12 @@ export const faq = {
     {
       programName: "the UI/UX Design Course",
       maxAmount: "$2,995",
+      col: false,
+      colAmount: "$6,000",
+    },
+    {
+      programName: "Part Time Modules 1-3",
+      maxAmount: "$11,995",
       col: false,
       colAmount: "$6,000",
     },
@@ -151,7 +157,7 @@ export const threeStepCardText = {
   step2: {
     header: "select your program",
     text:
-      "Choose between the Full-Immersion Bootcamp, Individual Modules, and UI/UX Design Course.",
+      "Choose between the Full-Immersion Bootcamp, Individual Modules, Part-Time Modules 1-3, and UI/UX Design Course.",
   },
   step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`,
 }
@@ -329,6 +335,43 @@ export const programLoanInfo = [
     ],
   },
   {
+    name: "Part Time Modules 1-3",
+    url: "https://my.skills.fund/application?lenderCode=SKFUZEPTM20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 11995,
+      loanTerm36: true,
+      loanTerm60: true,
+      "0": {
+        k: 14,
+        apr36: 10.62,
+        apr60: 12.26,
+      },
+      "1": null,
+    },
+    defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false,
+    showLoanTypes: false,
+    locations: ["Metro 1", "Metro 2"],
+    metros: [
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // match loanInfo to Program 2 loanInfo above
+          maxLoanAmt: 11995,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 14,
+            apr36: 10.62,
+            apr60: 12.26,
+          },
+          "1": null,
+        },
+      },
+    ],
+  },
+  {
     name: "UI/UX Design Course",
     url: "https://my.skills.fund/application?lenderCode=SKFUZEUDPT20",
     loanInfo: {
@@ -369,7 +412,7 @@ export const programLoanInfo = [
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
 export const programMaxText =
-  "Choose the loan amount that works best for you. Borrow up to $18,495 for LearningFuze's Full-Immersion Bootcamp, up to $3,995 for tuition for each of LearningFuze's modules 1-3, or up to $2,995 for the UI/UX Design Course."
+  "Choose the loan amount that works best for you. Borrow up to $18,495 for LearningFuze's Full-Immersion Bootcamp, up to $3,995 for tuition for each of LearningFuze's modules 1-3, up to $11,995 for tuition for Part-Time Modules 1-3, or up to $2,995 for the UI/UX Design Course."
 
 export const paymentTable = {
   headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
