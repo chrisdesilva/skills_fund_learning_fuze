@@ -171,6 +171,12 @@ export const faq = {
       colAmount: "$4,500",
     },
     {
+      programName: "the Remote Full Immersion Program",
+      maxAmount: "$13,995",
+      col: false,
+      colAmount: "$4,500",
+    },
+    {
       programName: "the Individual Modules",
       maxAmount: "$3,995",
       col: false,
@@ -247,6 +253,46 @@ export const programLoanInfo = [
   {
     name: "Full Immersion Bootcamp",
     url: "https://my.skills.fund/application?lenderCode=SKLFIM17",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 18495,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        // interest-only
+        k: 6,
+        apr36: 11.59,
+        apr60: 12.84,
+      },
+      "Immediate Repayment": null, // immediate repayment
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    loanTypes: ["Interest Only"],
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 18495,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 6,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "Remote Full Immersion",
+    url: "https://my.skills.fund/application?lenderCode=SKFUZERFIP20",
     loanInfo: {
       // match loanInfo in first metro below
       maxLoanAmt: 18495,
