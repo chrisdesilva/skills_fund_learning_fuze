@@ -142,7 +142,8 @@ export const previewText = {
 export const faq = {
   // faq section
   costOfLiving: true, // true if at least one program has cost of living included
-  costOfLivingPrograms: "Full-Immersion Bootcamp", // leave as empty string is cost of living availability is the same across all programs
+  costOfLivingPrograms:
+    "Full-Immersion Bootcamp and Remote Full-Immersion Bootcamp", // leave as empty string is cost of living availability is the same across all programs
   multCostOfLivingPrograms: false, // true if costOfLivingPrograms string has more than one program
   interestOnly: true, // true if interest-only payments are an option
   immediateRepayment: false, // true if immediate repayment is an option
@@ -173,7 +174,7 @@ export const faq = {
     {
       programName: "the Remote Full Immersion Program",
       maxAmount: "$13,995",
-      col: false,
+      col: true,
       colAmount: "$4,500",
     },
     {
