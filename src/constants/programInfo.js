@@ -195,6 +195,12 @@ export const faq = {
       col: false,
       colAmount: "$6,000",
     },
+    {
+      programName: "the Data Science Full Immersion Program",
+      maxAmount: "$12,995",
+      col: true,
+      colAmount: "$4,500",
+    },
   ],
 }
 
@@ -486,6 +492,44 @@ export const programLoanInfo = [
   {
     name: "UI/UX Design Course",
     url: "https://my.skills.fund/application?lenderCode=SKFUZEUDPT20",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 2995,
+      loanTerm36: true,
+      loanTerm60: true,
+      "Interest Only": {
+        k: 6,
+        apr36: 11.59,
+        apr60: 12.84,
+      },
+      "Immediate Repayment": null,
+    },
+    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false,
+    showLoanTypes: false,
+    loanTypes: ["Interest Only"],
+    locations: ["Metro 1", "Metro 2"],
+    metros: [
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // match loanInfo to Program 2 loanInfo above
+          maxLoanAmt: 2995,
+          loanTerm36: true,
+          loanTerm60: true,
+          "Interest Only": {
+            k: 6,
+            apr36: 11.59,
+            apr60: 12.84,
+          },
+          "Immediate Repayment": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "Data Science Full Immersion Program",
+    url: "https://my.skills.fund/application?lenderCode=SKFUZEDSFIP21",
     loanInfo: {
       // match loanInfo in first metro below
       maxLoanAmt: 2995,
